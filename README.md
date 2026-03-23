@@ -1,6 +1,6 @@
 # NGS-QC-Common-Questions
 
-1. When evaluting the left read of paired-end reads (R1), the right read (or R2) often has lower quality than the left read from Illumina sequencing. Why and how to mitigate this?
+_1. When evaluting the left read of paired-end reads (R1), the right read (or R2) often has lower quality than the left read from Illumina sequencing. Why and how to mitigate this?_
 Ans: It is very common for Illumina R2 reads to have lower quality than R1. This happens because the chemistry degrades over the longer run time, and the "phasing" (asynchrony of the cluster) accumulates by the time the second read starts.This difference in quality is just an artifact of the paired-end Illumina sequencing. Here are some recommendations to remediate this:
 - Run FastQC/MultiQC: Confirm if the quality drop is a steady decline toward the end of the read or if it’s a sudden crash.
 - Adapter & Quality Trimming: Use a tool like Trimmomatic or Cutadapt. You can set a "sliding window" (e.g., SLIDINGWINDOW:4:20) to crop the ends of R2 where the quality dips below a certain threshold.
