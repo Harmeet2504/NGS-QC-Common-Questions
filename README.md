@@ -17,3 +17,12 @@ Use a tool like Trimmomatic, fastp, or Cutadapt and provide both R1 and R2 at th
 If you no longer have the raw data and need to fix your current mismatched files, use a tool specifically designed to re-sync them:
 BBMap's repair.sh: This is the gold-standard tool for this problem. It compares the read IDs in both files and outputs matched R1/R2 files, placing any orphans into a third file.
 Custom Scripts: Community scripts like fastqCombinePairedEnd.py can also be used to match IDs
+
+
+
+
+
+Reference:
+1. [FASTQC manual] (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+2. [FastQC detailed explanation](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/)
+3. [HBC Training](https://hbctraining.github.io/Intro-to-variant-analysis/lessons/02_fastqc.html)
