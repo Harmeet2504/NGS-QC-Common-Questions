@@ -23,6 +23,6 @@ Custom Scripts: Community scripts like fastqCombinePairedEnd.py can also be used
 
 
 Reference:
-1. [FASTQC manual] (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+1. [FASTQC manual](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 2. [FastQC detailed explanation](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/)
 3. [HBC Training](https://hbctraining.github.io/Intro-to-variant-analysis/lessons/02_fastqc.html)
