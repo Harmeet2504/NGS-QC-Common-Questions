@@ -18,7 +18,7 @@ If you no longer have the raw data and need to fix your current mismatched files
 BBMap's repair.sh: This is the gold-standard tool for this problem. It compares the read IDs in both files and outputs matched R1/R2 files, placing any orphans into a third file.
 Custom Scripts: Community scripts like fastqCombinePairedEnd.py can also be used to match IDs
 
-__3. What are the bit wise flag in the second column of SAM file? How to decode it?__ 
+__3.What information is encoded in the bitwise flag found in the second column of a SAM file, and how can it be decoded to understand read properties?__ 
 __Ans:__ Bitwise flags in SAM files (column 2) are compact numerical codes representing boolean properties of a sequencing read, such as mapping status, strand, and pairing, used to save disk space. A single integer (e.g., 16, 99, 163) is the sum of various binary flags, which can be decoded to understand the read's alignment characteristics. Examples: A flag of 16 (0x10) indicates the read is on the reverse strand. A flag of 1040 is a combination of 1024 (duplicate) and 16 (reverse strand). The Broad Institue provides a [utility tool](https://broadinstitute.github.io/picard/explain-flags.html) to decode SAM flags.
 
 
